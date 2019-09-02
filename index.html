@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector Game</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Added a link to our external stylesheet-->
+  <link rel="stylesheet" href="Assets/css/style.css">
+  <link rel="stylesheet" href="Assets/css/reset.css">
+ 
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <div class="row">
+      <header>
+        <h1>Crystal Collector</h1>
+      </header>
+    </div>
+
+    <div id="instructions" class="row" style="padding-right: 5px;"> 
+      <li> Instructions 
+      <ul>each of the crsytal are assigned a random number and the goal is to click them inorder to reach the target score</ul>
+      <ul> Click on the crstal icons and notice the score under Total Score </ul>
+      <ul> If the total score is less than the Targer Score, keep on collecting the gems by clicking them</ul>
+      <ul> If the total score = target score, then you win</ul>
+      <ul>If the total score > target score, then you loose</ul>
+      </li>
+    </div>
+
+
+
+    <div class="row">
+      <div id="targetscore" class="col-md3">
+
+        <div class="card text-white bg-success mb-1 mt-2 mr-3">
+          <div class="card-header">Targetscore</div>
+          <div class="cardbody"> <span id="random-target-score" style="font-size: 35px;"> </span> </div>
+        </div>
+      </div>
+
+
+      <div id="scorecard" class="col-md3">
+        <div class="card text-white bg-success mb-1 mt-2">
+          <div class="card-header"> <span id="wins"> Wins: </span></div>
+          <div class="card-header"><span id="losses"> Losses: </span> </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <img src="Assets/images/120-512.png" class="img-fluid img-thumbnail jwlimg" id="img1" alt="img1">
+      <img src="Assets/images/192-512.png" class="img-fluid img-thumbnail jwlimg" id="img2" alt="img2">
+      <img src="Assets/images/diamond-512.png" class="img-fluid img-thumbnail jwlimg" id="img3" alt="img3">
+      <img src="Assets/images/jewel-gem-diamond-luxury-jewellery-shopping-2-512.png" class="img-fluid img-thumbnail jwlimg"
+        id="img4" alt="img4">
+    </div>
+    <div id="text-total-score" class="row">Your Total score is:</div>
+    <div class="row dis-tot-sc">
+      <span id="display-total-score">0</span>
+    </div>
+  </div>
+
+  <script src="Assets/javascript/game.js"></script>
+
+
+</body>
+
+</html>
